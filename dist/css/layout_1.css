@@ -1,0 +1,80 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+* {
+  font-size: 16px;
+}
+* body {
+  background: #000;
+}
+* body a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.header .container {
+  width: 80%;
+  height: 100%;
+  margin: auto;
+  background: #dedede;
+}
+.header .container .header-content {
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-radius: 10px;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+}
+.header .container .header-content .menu {
+  list-style-type: none;
+  display: flex;
+}
+.header .container .header-content .menu li {
+  margin-right: 20px;
+  font-weight: 600;
+  text-align: center;
+}
+.header .container .header-content .menu li:last-child {
+  margin-right: 0;
+}
+.header .container .header-content .menu li:hover {
+  color: blue;
+}
+.header .container .header-content .menu li .en {
+  font-size: 12px;
+  font-family: monospace;
+  text-transform: uppercase;
+}
+
+.join-form {
+  min-height: 100vh;
+  color: #fff;
+  background: #000;
+  background-image: url(../images/banner.jpeg);
+  background-size: cover;
+}
+.join-form .container {
+  width: 80%;
+  height: 100%;
+  margin: auto;
+}
+.join-form .container .join-form-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100vh;
+}/*# sourceMappingURL=layout_1.css.map */
