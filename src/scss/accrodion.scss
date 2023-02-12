@@ -1,0 +1,52 @@
+@import 'reset';
+
+.container {
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    background: rgb(236, 202, 89);
+
+    .accrodion {
+        margin: 20px auto;
+        background: rgb(105, 219, 105);
+
+        .tab {
+            border: 1px solid rgb(41, 164, 221);
+
+            >label {
+                display: flex;
+                background: rgb(209, 77, 77);
+                color: #fff;
+                padding: 12px;
+                font-size: 26px;
+                font-weight: 800;
+                font-family: monospace;
+                cursor: pointer;
+                user-select: none;
+                justify-content: space-between;
+                align-items: center;
+
+                >div {
+                    font-size: 25px;
+                }
+
+                &:hover {
+                    background: orangered;
+                }
+
+                .close-icon {
+                    display: none;
+                }
+            }
+
+            .tab-content {
+                padding: 10px;
+                display: none;
+            }
+
+            >input:checked+.tab-content {
+                display: block;
+            }
+        }
+    }
+}

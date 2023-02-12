@@ -1,0 +1,52 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 80%;
+  height: 100%;
+  margin: auto;
+  background: rgb(236, 202, 89);
+}
+.container .accrodion {
+  margin: 20px auto;
+  background: rgb(105, 219, 105);
+}
+.container .accrodion .tab {
+  border: 1px solid rgb(41, 164, 221);
+}
+.container .accrodion .tab > label {
+  display: flex;
+  background: rgb(209, 77, 77);
+  color: #fff;
+  padding: 12px;
+  font-size: 26px;
+  font-weight: 800;
+  font-family: monospace;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  justify-content: space-between;
+  align-items: center;
+}
+.container .accrodion .tab > label > div {
+  font-size: 25px;
+}
+.container .accrodion .tab > label:hover {
+  background: orangered;
+}
+.container .accrodion .tab > label .close-icon {
+  display: none;
+}
+.container .accrodion .tab .tab-content {
+  padding: 10px;
+  display: none;
+}
+.container .accrodion .tab > input:checked + .tab-content {
+  display: block;
+}/*# sourceMappingURL=accrodion.css.map */
