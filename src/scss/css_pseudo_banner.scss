@@ -22,8 +22,8 @@
         z-index: 3;
         font-weight: 800;
 
-        &::selection {
-            background: rgb(52, 129, 116);
+        ::selection {
+            background: rgb(195, 24, 90);
             color: yellow;
         }
 

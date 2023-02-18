@@ -1,0 +1,29 @@
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+
+    >img {
+        width: 250px;
+        height: 105px;
+    }
+}
+
+li {
+    list-style-type: none;
+}
+
+.header {
+    background: #dedede;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
