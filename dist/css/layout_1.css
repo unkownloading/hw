@@ -191,4 +191,12 @@ a {
 .form-control-item .form-control-append .button {
   height: 100%;
   display: inline-block;
+}
+
+.process-flow {
+  background: #000;
+  background-image: url(../images/process.jpeg);
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
 }/*# sourceMappingURL=layout_1.css.map */
