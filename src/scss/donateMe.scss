@@ -10,7 +10,7 @@ a {
     text-decoration: none;
     color: inherit;
 
-    >img {
+    & img {
         width: 250px;
         height: 105px;
     }
@@ -18,12 +18,4 @@ a {
 
 li {
     list-style-type: none;
-}
-
-.header {
-    background: #dedede;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
 }
