@@ -16,6 +16,14 @@ a {
     }
 }
 
+ul {
+    display: block;
+}
+
 li {
     list-style-type: none;
+}
+
+.menu {
+    flex: 1;
 }

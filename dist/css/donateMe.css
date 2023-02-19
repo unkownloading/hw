@@ -15,6 +15,14 @@ a img {
   height: 105px;
 }
 
+ul {
+  display: block;
+}
+
 li {
   list-style-type: none;
+}
+
+.menu {
+  flex: 1;
 }/*# sourceMappingURL=donateMe.css.map */
