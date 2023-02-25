@@ -12,61 +12,93 @@
 </head>
 
 <body>
-    <!-- header fixed -->
-    <div class="header fixed-top">
-        <!-- container white -->
-        <div class="container bg-white">
-            <!-- d-flex between -->
-            <div class="header-content d-flex justify-content-between ">
+    <!-- header -->
+    <div class="header ">
+        <!-- header container -->
+        <div class="header-container">
+            <!-- header content -->
+            <div class="header-content d-flex justify-content-between align-items-center">
                 <!-- logo -->
                 <div class="logo">
                     <a href="#">
-                        <img src="images/LOGOPNG.PNG" alt="">
+                        <img src="images/logo2.PNG" alt="">
                     </a>
                 </div>
                 <!-- menu -->
-                <div class="menu d-flex container align-items-center ">
-                    <ul class="d-flex  ">
-                        <li>
-                            <a href="#">
-                                <div class="text-center">About Me</div>
-                                <div class="text-center">關於我</div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <div class="text-center">Daddys</div>
-                                <div class="text-center">乾爹們</div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <div class="text-center">Donate Me</div>
-                                <div class="text-center">抖內我</div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <div class="text-center">International</div>
-                                <div class="text-center">國際化</div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <div class="text-center">Exchange Rate</div>
-                                <div class="text-center">匯率表</div>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+                <ul class="menu d-flex align-items-center justify-content-around text-center">
+                    <li>
+                        <a href="#">
+                            <div class="">Daddys</div>
+                            <!-- <div class="">關於我</div> -->
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="">Daddys</div>
+                            <!-- <div class="">乾爹們</div> -->
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="">Daddys</div>
+                            <!-- <div class="">抖內我</div> -->
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="">Daddys</div>
+                            <!-- <div class="">國際化</div> -->
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="">Daddys</div>
+                            <!-- <div class="">匯率表</div> -->
+                        </a>
+                    </li>
+                </ul>
             </div>
+        </div>
+    </div>
+
+    <!--  wrap mid (content)  -->
+    <div class="wrap">
+        <!-- wrap container -->
+        <div class="wrap-container d-flex justify-content-between  ">
+            <!-- wrap 左邊 (老爹排行榜) -->
+            <div class="left d-flex flex-column  justify-content-center" id="app">
+                <form v-on:submit.prevent="add">
+                    <input v-model="dadcontent" placeholder="灌水囉">
+                    <button class="btn">+</button>
+                </form>
+                <ul>
+                    <li v-for="dad in arr" v-on:key="dad.id">
+                        {{ dad.text}}
+                        <button class="btn " v-on:click="remove(dad)">X</button>
+                    </li>
+                </ul>
+            </div>
+            <!-- wrap 右邊(內容) -->
+            <div class="Right">right</div>
         </div>
     </div>
 
 
 
-    <div class="wrap" style="height: 800vh; background: rgb(161, 17, 48);">wrapwrapwrapwrapwrap</div>
+
+
+
+
+
+
+
+
+
     <div class="footer">footer</div>
 </body>
+<!-- vue 3 js  -->
+<script src="js/vue3.js"></script>
+<!-- js -->
+<script src="js/donateMe.js"></script>
 
 </html>

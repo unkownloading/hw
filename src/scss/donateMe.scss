@@ -6,24 +6,91 @@
     box-sizing: border-box;
 }
 
+// ------------------------我是超連結--------------------------
 a {
     text-decoration: none;
     color: inherit;
 
-    & img {
+    // --------------------------我是超連結裡的圖片(logo)--------------------------
+    >img {
         width: 250px;
         height: 105px;
     }
 }
 
+// --------------------------我是menu裡面的ul--------------------------
 ul {
     display: block;
 }
 
+// --------------------------我是li裡面的點(.)--------------------------
 li {
     list-style-type: none;
 }
 
-.menu {
-    flex: 1;
+// --------------------------我是header--------------------------
+.header {
+    // background: #000;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+
+    // --------------------------我是header容器--------------------------
+    .header-container {
+        background: #000;
+        width: 80%;
+        margin: auto;
+
+        //-------------------------- 我是header內容--------------------------
+        .header-content {
+            font-size: 15px;
+            font-weight: 550;
+            // 我是header裡的menu
+
+            .menu {
+
+                margin: auto 0;
+                width: 40%;
+                color: #fff;
+
+                // Daddys 文字變顏色
+                div {
+                    &:hover {
+                        color: rgb(75, 219, 242);
+                        transition-duration: 1s;
+                    }
+                }
+
+            }
+        }
+
+    }
+}
+
+// --------------------------我是wrap--------------------------
+.wrap {
+
+    width: 100%;
+    height: auto;
+    margin: auto;
+
+
+    // --------------------------我是wrap容器--------------------------
+    .wrap-container {
+        width: 80%;
+        width: 100%;
+        margin: calc(100% - 93%) auto;
+        background: rgb(42, 195, 215);
+
+        .left {
+            color: #fff;
+            font-size: 16px;
+            font-weight: 600;
+            background: rgb(125, 209, 188);
+        }
+    }
 }

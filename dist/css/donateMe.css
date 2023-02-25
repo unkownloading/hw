@@ -10,7 +10,7 @@ a {
   text-decoration: none;
   color: inherit;
 }
-a img {
+a > img {
   width: 250px;
   height: 105px;
 }
@@ -23,6 +23,48 @@ li {
   list-style-type: none;
 }
 
-.menu {
-  flex: 1;
+.header {
+  width: 100%;
+  height: auto;
+  margin: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+.header .header-container {
+  background: #000;
+  width: 80%;
+  margin: auto;
+}
+.header .header-container .header-content {
+  font-size: 15px;
+  font-weight: 550;
+}
+.header .header-container .header-content .menu {
+  margin: auto 0;
+  width: 40%;
+  color: #fff;
+}
+.header .header-container .header-content .menu div:hover {
+  color: rgb(75, 219, 242);
+  transition-duration: 1s;
+}
+
+.wrap {
+  width: 100%;
+  height: auto;
+  margin: auto;
+}
+.wrap .wrap-container {
+  width: 80%;
+  width: 100%;
+  margin: 7% auto;
+  background: rgb(42, 195, 215);
+}
+.wrap .wrap-container .left {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  background: rgb(125, 209, 188);
 }/*# sourceMappingURL=donateMe.css.map */
