@@ -27,10 +27,9 @@ li {
   width: 100%;
   height: auto;
   margin: auto;
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
-  z-index: 2;
 }
 .header .header-container {
   background: #000;
@@ -53,13 +52,12 @@ li {
 
 .wrap {
   width: 100%;
-  height: auto;
+  height: 100vh;
   margin: auto;
 }
 .wrap .wrap-container {
-  width: 80%;
   width: 100%;
-  margin: 7% auto;
+  margin: auto;
   background: rgb(42, 195, 215);
 }
 .wrap .wrap-container .left {

@@ -34,10 +34,9 @@ li {
     width: 100%;
     height: auto;
     margin: auto;
-    position: fixed;
+    position: sticky;
     top: 0;
     left: 0;
-    z-index: 2;
 
     // --------------------------我是header容器--------------------------
     .header-container {
@@ -75,15 +74,14 @@ li {
 .wrap {
 
     width: 100%;
-    height: auto;
+    height: 100vh;
     margin: auto;
 
 
     // --------------------------我是wrap容器--------------------------
     .wrap-container {
-        width: 80%;
         width: 100%;
-        margin: calc(100% - 93%) auto;
+        margin: auto;
         background: rgb(42, 195, 215);
 
         .left {
