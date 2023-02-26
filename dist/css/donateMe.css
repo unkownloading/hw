@@ -44,6 +44,7 @@ li {
   margin: auto 0;
   width: 40%;
   color: #fff;
+  font-family: "Open Sans", sans-serif;
 }
 .header .header-container .header-content .menu div:hover {
   color: rgb(75, 219, 242);
@@ -61,6 +62,7 @@ li {
   background: rgb(42, 195, 215);
 }
 .wrap .wrap-container .left {
+  height: 100%;
   color: #fff;
   font-size: 16px;
   font-weight: 600;

@@ -1,0 +1,26 @@
+@import 'reset';
+
+.container {
+    width: 80%;
+    height: auto;
+    margin: auto;
+}
+
+.block {
+    width: 200px;
+    height: 200px;
+    background: #ff5656;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition-property: background;
+    transition-duration: 2s;
+    // transition-delay: 1s;
+
+    &:hover {
+        background: #34a8eb;
+        font-size: 30px;
+    }
+}
