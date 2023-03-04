@@ -11,8 +11,8 @@ a {
   color: inherit;
 }
 a > img {
-  width: 250px;
-  height: 105px;
+  width: 84px;
+  height: 70px;
 }
 
 ul {
@@ -21,6 +21,11 @@ ul {
 
 li {
   list-style-type: none;
+}
+
+.btnn {
+  width: 20px;
+  height: 20px;
 }
 
 .header {
@@ -32,19 +37,25 @@ li {
   left: 0;
 }
 .header .header-container {
-  background: #000;
   width: 80%;
   margin: auto;
 }
 .header .header-container .header-content {
   font-size: 15px;
   font-weight: 550;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .header .header-container .header-content .menu {
   margin: auto 0;
   width: 40%;
-  color: #fff;
+  color: #000;
   font-family: "Open Sans", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
 }
 .header .header-container .header-content .menu div:hover {
   color: rgb(75, 219, 242);
@@ -53,18 +64,24 @@ li {
 
 .wrap {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   margin: auto;
+  background: #000;
 }
 .wrap .wrap-container {
   width: 100%;
-  margin: auto;
-  background: rgb(42, 195, 215);
-}
-.wrap .wrap-container .left {
   height: 100%;
-  color: #fff;
-  font-size: 16px;
-  font-weight: 600;
-  background: rgb(125, 209, 188);
+  margin: auto;
+}
+.wrap .wrap-container .wrap-content-1 {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+}
+.wrap .wrap-container .wrap-content-1 img {
+  width: 600px;
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin: auto;
 }/*# sourceMappingURL=donateMe.css.map */

@@ -6,31 +6,35 @@
     box-sizing: border-box;
 }
 
-// ------------------------我是超連結--------------------------
+// --------------------------我是超連結--------------------------
 a {
     text-decoration: none;
     color: inherit;
 
-    // --------------------------我是超連結裡的圖片(logo)--------------------------
+    // -----------------我是超連結裡的圖片(logo)-------------------
     >img {
-        width: 250px;
-        height: 105px;
+        width: 84px;
+        height: 70px;
     }
 }
 
-// --------------------------我是menu裡面的ul--------------------------
+// ------------------------我是menu裡面的ul------------------------
 ul {
     display: block;
 }
 
-// --------------------------我是li裡面的點(.)--------------------------
+// -------------------------我是li裡面的點(.)-----------------------
 li {
     list-style-type: none;
 }
 
+.btnn {
+    width: 20px;
+    height: 20px;
+}
+
 // --------------------------我是header--------------------------
 .header {
-    // background: #000;
     width: 100%;
     height: auto;
     margin: auto;
@@ -40,22 +44,28 @@ li {
 
     // --------------------------我是header容器--------------------------
     .header-container {
-        background: #000;
         width: 80%;
         margin: auto;
+
 
         //-------------------------- 我是header內容--------------------------
         .header-content {
             font-size: 15px;
             font-weight: 550;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
             // 我是header裡的menu
 
             .menu {
-
                 margin: auto 0;
                 width: 40%;
-                color: #fff;
+                color: #000;
                 font-family: 'Open Sans', sans-serif;
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                text-align: center;
 
                 // Daddys 文字變顏色
                 div {
@@ -72,27 +82,33 @@ li {
 }
 
 // --------------------------我是wrap--------------------------
+
 .wrap {
 
     width: 100%;
-    height: 100vh;
+    height: 100%;
     margin: auto;
+    background: #000;
 
-
-    // --------------------------我是wrap容器--------------------------
+    // --------------------------我是wrap 容器--------------------------
     .wrap-container {
-        width: 100%;
-        margin: auto;
-        background: rgb(42, 195, 215);
 
-        .left {
+
+        width: 100%;
+        height: 100%;
+        margin: auto;
+
+        .wrap-content-1 {
+            width: 100%;
             height: 100%;
-            color: #fff;
-            font-size: 16px;
-            font-weight: 600;
-            background: rgb(125, 209, 188);
-            // position: fixed;
-            // left: 0;
+            margin: auto;
+
+            img {
+                width: 600px;
+                height: 400px;
+                object-fit: cover;
+                margin: auto;
+            }
         }
     }
 }
