@@ -11,8 +11,8 @@ a {
   color: inherit;
 }
 a > img {
-  width: 84px;
-  height: 70px;
+  width: 90px;
+  height: 75px;
 }
 
 ul {
@@ -31,42 +31,40 @@ li {
 .header {
   background: rgba(222, 222, 222, 0.1607843137);
   width: 100%;
-  height: auto;
   margin: auto;
   position: sticky;
   top: 0;
   left: 0;
   z-index: 2;
 }
-.header .header-container {
-  width: 80%;
-  margin: auto;
-}
-.header .header-container .header-content {
+.header .header-content {
   font-size: 15px;
   font-weight: 550;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 80%;
+  height: 100%;
+  margin: auto;
 }
-.header .header-container .header-content .menu {
+.header .header-content .menu {
   margin: auto 0;
-  width: 40%;
+  width: 45%;
   color: #000;
   font-family: "Open Sans", sans-serif;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
   text-align: center;
 }
-.header .header-container .header-content .menu div:hover {
+.header .header-content .menu div:hover {
   color: rgb(75, 219, 242);
   transition-duration: 1s;
 }
 
 .mid .mid-container {
   width: 100%;
-  height: 100vh;
+  height: 80vh;
   margin: auto;
   background: #dedede;
 }
@@ -86,26 +84,47 @@ li {
   left: 0;
   background: rgba(0, 0, 0, 0.295);
 }
+.mid .mid-container .mid-img .slogan {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.mid .mid-container .mid-img .slogan > div {
+  font-size: 120px;
+  color: #fff;
+  font-weight: 600;
+  line-height: 1.5;
+  position: absolute;
+  top: 86px;
+  left: 430px;
+  z-index: 2;
+  text-align: left;
+}
+.mid .mid-container .mid-img .slogan > div .donate-btn {
+  margin-top: -60px;
+  padding: 20px 70px;
+  text-align: center;
+  color: #36b3ec;
+  background: white;
+  align-items: center;
+  border-radius: 50px;
+}
 
 .wrap {
+  background: orange;
   width: 100%;
   height: 100%;
   margin: auto;
 }
-.wrap .wrap-container {
-  width: 100%;
-  height: 100%;
-  margin: auto;
-}
-.wrap .wrap-container .wrap-content-1 {
+.wrap .wrap-content-1 {
   width: 100%;
   height: 100%;
   margin: auto;
   padding: 30px;
 }
-.wrap .wrap-container .wrap-content-1 img {
-  width: 600px;
-  height: 400px;
+.wrap .wrap-content-1 img {
+  width: 100%;
+  height: 500px;
   -o-object-fit: cover;
      object-fit: cover;
   margin: auto;

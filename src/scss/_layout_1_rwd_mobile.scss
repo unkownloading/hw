@@ -60,7 +60,7 @@
 
 
 
-@media screen and (max-width : 630px) {
+@media screen and (max-width : 752px) {
     .mobile-icon {
         display: flex;
     }
@@ -161,4 +161,44 @@
             width: 100%;
         }
     }
+
+    .flow {
+        &::after {
+            left: 50px;
+        }
+
+        .flow-item {
+            justify-content: flex-start;
+            padding-left: 32px;
+
+
+
+            &:nth-child(even) .flow-text {
+                right: unset;
+                left: 20px;
+                margin-right: 0;
+                margin-left: 72px;
+                text-align: left;
+                width: 80%;
+
+            }
+        }
+
+        .flow-text {
+            left: 20px;
+            width: 80%;
+
+        }
+    }
 }
+
+// .flow {
+//     &::after {
+//         left: 30px;
+//     }
+
+//     .flow-item {
+//         justify-content: flex-start;
+//         padding-left: 12px;
+//     }
+// }

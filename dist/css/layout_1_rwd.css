@@ -327,7 +327,7 @@ a {
   transform: rotate(-45deg);
 }
 
-@media screen and (max-width: 630px) {
+@media screen and (max-width: 752px) {
   .mobile-icon {
     display: flex;
   }
@@ -402,5 +402,24 @@ a {
   }
   .join-form .join-form-content .content-wrap .right-side {
     width: 100%;
+  }
+  .flow::after {
+    left: 50px;
+  }
+  .flow .flow-item {
+    justify-content: flex-start;
+    padding-left: 32px;
+  }
+  .flow .flow-item:nth-child(even) .flow-text {
+    right: unset;
+    left: 20px;
+    margin-right: 0;
+    margin-left: 72px;
+    text-align: left;
+    width: 80%;
+  }
+  .flow .flow-text {
+    left: 20px;
+    width: 80%;
   }
 }/*# sourceMappingURL=layout_1_rwd.css.map */
