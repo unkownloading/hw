@@ -29,12 +29,14 @@ li {
 }
 
 .header {
+  background: rgba(222, 222, 222, 0.1607843137);
   width: 100%;
   height: auto;
   margin: auto;
   position: sticky;
   top: 0;
   left: 0;
+  z-index: 2;
 }
 .header .header-container {
   width: 80%;
@@ -62,11 +64,33 @@ li {
   transition-duration: 1s;
 }
 
+.mid .mid-container {
+  width: 100%;
+  height: 100vh;
+  margin: auto;
+  background: #dedede;
+}
+.mid .mid-container .mid-img {
+  background-image: url(../images/6.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.mid .mid-container .mid-img::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.295);
+}
+
 .wrap {
   width: 100%;
   height: 100%;
   margin: auto;
-  background: #000;
 }
 .wrap .wrap-container {
   width: 100%;
